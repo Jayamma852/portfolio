@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Nav Bar</title>
+    
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./projects.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #d6d4eb;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: rgb(166, 138, 232);
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul li a i {
+            margin-right: 8px;
+        }
+
+        nav ul li a:hover {
+            color: #8282db;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">MyProfile</div>
+        <ul>
+            <li><a href="./Home.html"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="./About.html"><i class="fas fa-user"></i>About</a></li>
+            <li><a href="./Skills.html"><i class="fas fa-cogs"></i>Skills</a></li>
+            <li><a href="./Projects.html"><i class="fas fa-folder-open"></i>Projects</a></li>
+            <li><a href="./Contact.html"><i class="fas fa-envelope"></i>Contact</a></li>
+        </ul>
+    </nav>
+
+  <section class="projects-section">
+    <h1>My Projects</h1>
+    <p>Welcome! Here are some of the projects I have worked on:</p>
+
+    <div class="projects-container">
+
+      
+
+      <div class="project-card">
+        <img src="./images/medic.jpg" alt="Hospital Website">
+        <h2>Hospital Website</h2>
+        <p>A hospital website showing facilities and medicines provided.</p>
+        <p><a href="https://github.com/yourusername/task-manager" target="_blank">View Project</a></p>
+      </div>
+
+      <div class="project-card">
+        <img src="./images/music.png" alt="Music AI App">
+        <h2>Music-AI</h2>
+        <p>An app that plays music based on your face expression and mood.</p>
+        <p><a href="https://github.com/yourusername/weather-app" target="_blank">View Project</a></p>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>

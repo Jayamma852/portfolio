@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me - CSE Student</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #e0dbed;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: rgb(166, 138, 232);
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul li a:hover {
+            color: #8282db;
+        }
+
+        /* About Section Styling */
+        .about-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 80px 20px;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+
+        .about-text {
+            flex: 1 1 400px;
+            max-width: 600px;
+        }
+
+        .about-text h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .about-image {
+            flex: 1 1 400px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .about-image img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            object-fit: cover;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .about-section {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+
+    <!-- FontAwesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">MyProfile</div>
+        <ul>
+            <li><a href="./Home.html"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="./About.html"><i class="fas fa-user"></i>About</a></li>
+            <li><a href="./Skills.html"><i class="fas fa-cogs"></i>Skills</a></li>
+            <li><a href="./Projects.html"><i class="fas fa-folder-open"></i>Projects</a></li>
+            <li><a href="./Contact.html"><i class="fas fa-envelope"></i>Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="about-text">
+            <h1>About Me</h1>
+            <p>Hello! I'm a passionate Computer Science Engineering (CSE) student who loves technology, coding, and innovation.
+               I enjoy solving real-world problems through creative software solutions. My interests include Web Development, 
+               Artificial Intelligence, Machine Learning, and Software Engineering. I am dedicated to continuous learning, 
+               self-improvement, and working on projects that make a positive impact in the world. 
+               I look forward to collaborating with like-minded individuals and organizations to build the future of tech!</p>
+        </div>
+        <div class="about-image">
+            <img src="./images/profile.webp" alt="CSE Student Profile">
+        </div>
+    </section>
+</body>
+</html>

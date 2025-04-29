@@ -1,0 +1,123 @@
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #f4f4f4;
+    }
+
+    nav {
+        background-color: #333;
+        padding: 15px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px; /* Fixed height for navbar */
+        position: fixed; /* Make navbar fixed at top */
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .logo {
+        color: rgb(166, 138, 232);
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+    }
+
+    nav ul li a i {
+        margin-right: 8px;
+    }
+
+    nav ul li a:hover {
+        color: #8282db;
+    }
+
+    /* Main Section */
+    .main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 120px 20px 20px; /* Top padding increased to 120px to leave space for fixed navbar */
+        min-height: 100vh;
+        box-sizing: border-box;
+    }
+
+    .container {
+        display: flex;
+        background-color: #fff;
+        border-radius: 12px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        width: 90%;
+        max-width: 1000px;
+        flex-wrap: wrap; /* Important for responsiveness */
+    }
+
+    .card {
+        flex: 1 1 300px;
+        padding: 40px;
+    }
+
+    .card h1 {
+        font-size: 2.5rem;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .card p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #666;
+    }
+
+    .image {
+        flex: 1 1 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .image img {
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .image img {
+            width: 80%;
+        }
+
+        .card {
+            text-align: center;
+        }
+    }
